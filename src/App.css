@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-width: 320px;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background: #111827;
+  color: white;
+  padding: 18px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #93c5fd;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  min-height: 80vh;
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.hero div {
+  max-width: 750px;
+}
+
+.hero h1 {
+  font-size: 45px;
+  max-width: 700px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: white;
+}
+
+.btn {
+  background: white;
+  color: #1e3a8a;
+  padding: 14px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #dbeafe;
+}
+
+/* SECCIONES */
+.section {
+  width: 100%;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #111827;
+}
+
+/* SERVICIOS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #9b13b6;
+}
+
+.card p {
+  line-height: 1.5;
+}
+
+/* BENEFICIOS */
+.benefits {
+  background: white;
+}
+
+.benefits ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+}
+
+.benefits li {
+  background: #eff6ff;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* FORMULARIO */
+.form {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 13px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #2563eb;
+}
+
+.form textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+.form span {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form button:hover {
+  background: #0f41e4;
+}
+
+.success {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  width: 100%;
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE TABLET Y CELULAR */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 70vh;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 50px 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .form {
+    padding: 25px 20px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 18px;
+  }
+}
+
+/* RESPONSIVE CELULARES PEQUEÑOS */
+@media (max-width: 480px) {
+  .navbar h2 {
+    font-size: 23px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .section h2 {
+    font-size: 26px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    padding: 24px 18px;
+  }
+
+  .form {
+    padding: 22px 16px;
+  }
+}
