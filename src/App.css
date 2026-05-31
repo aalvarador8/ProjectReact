@@ -21,7 +21,7 @@ body {
   color: #1f2937;
 }
 
-/* NAVBAR */
+
 .navbar {
   width: 100%;
   background: #111827;
@@ -54,7 +54,7 @@ body {
   color: #93c5fd;
 }
 
-/* HERO */
+
 .hero {
   width: 100%;
   min-height: 80vh;
@@ -98,7 +98,7 @@ body {
   background: #dbeafe;
 }
 
-/* SECCIONES */
+
 .section {
   width: 100%;
   padding: 70px 8%;
@@ -111,7 +111,7 @@ body {
   color: #111827;
 }
 
-/* SERVICIOS */
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -134,7 +134,7 @@ body {
   line-height: 1.5;
 }
 
-/* BENEFICIOS */
+
 .benefits {
   background: white;
 }
@@ -153,7 +153,7 @@ body {
   font-weight: 500;
 }
 
-/* FORMULARIO */
+
 .form {
   background: white;
   width: 100%;
@@ -216,7 +216,7 @@ body {
   font-weight: bold;
 }
 
-/* FOOTER */
+
 footer {
   width: 100%;
   background: #111827;
@@ -225,7 +225,7 @@ footer {
   padding: 20px;
 }
 
-/* RESPONSIVE TABLET Y CELULAR */
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -272,7 +272,7 @@ footer {
   }
 }
 
-/* RESPONSIVE CELULARES PEQUEÑOS */
+
 @media (max-width: 480px) {
   .navbar h2 {
     font-size: 23px;
